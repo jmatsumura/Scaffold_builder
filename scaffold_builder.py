@@ -551,7 +551,7 @@ def run():
         parameters["-b"]=int(parameters["-b"])
         
         #Run Nucmer // Creates the folder to the aligments and overlaps
-        os.system(which("nucmer")+" "+parameters["-r"]+" "+parameters["-q"]+" && "+which("show-coords")+" out.delta >"+parameters["-p"]+".coords && rm out.delta && mkdir "+parameters["-p"]+"_overlap_alignment")
+        os.system(which("nucmer")+" "+parameters["-r"]+" "+parameters["-q"]+" --maxmatch"+" && "+which("show-coords")+" out.delta >"+parameters["-p"]+".coords && rm out.delta && mkdir "+parameters["-p"]+"_overlap_alignment")
         return True
 
 
