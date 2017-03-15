@@ -563,6 +563,5 @@ try:
         cleanCoords=cleanCoords(coords)
         sortMapping(cleanCoords)
 
-        print "Scaffolded :)"
 except:
     print helpMsg
